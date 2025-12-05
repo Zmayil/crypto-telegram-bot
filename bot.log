@@ -1,0 +1,26 @@
+2025-12-05 13:43:36 - __main__ - INFO - 🤖 Бот запущен и готов к работе!
+2025-12-05 13:43:36 - aiogram.dispatcher - INFO - Start polling
+2025-12-05 13:43:36 - __main__ - INFO - 💚 Запуск фонового обновления цен...
+2025-12-05 13:43:36 - services.crypto_service - INFO - Кэш загружен, 10 записей
+2025-12-05 13:43:36 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-05 13:43:36 - aiogram.dispatcher - INFO - Run polling for bot @CoinVisionAppBot id=8597814599 - 'CryptoWatcherBot'
+2025-12-05 13:43:36 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-05 13:43:46 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-05 13:43:47 - aiogram.event - INFO - Update id=853977742 is handled. Duration 530 ms by bot id=8597814599
+2025-12-05 13:44:36 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-05 13:44:37 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-05 13:45:37 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-05 13:46:37 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-05 13:46:37 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-05 13:47:37 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-05 13:47:38 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-05 13:48:38 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-05 13:48:38 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-05 13:49:38 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-05 13:49:39 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-05 13:50:28 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-05 13:50:28 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-05 13:50:28 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8597814599)
+2025-12-05 13:50:28 - __main__ - INFO - ⏹️ Фоновая задача остановлена
+2025-12-05 13:50:28 - __main__ - INFO - 🛑 Бот остановлен
+2025-12-05 13:50:28 - aiogram.dispatcher - INFO - Polling stopped for bot @CoinVisionAppBot id=8597814599 - 'CryptoWatcherBot'
