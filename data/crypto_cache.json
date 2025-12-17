@@ -1,48 +1,48 @@
 {
   "prices": {
     "BTC": {
-      "price": 91209,
-      "change_24h": -2.0810129420546986,
+      "price": 86785,
+      "change_24h": 0.6764335537219793,
       "source": "CoinGecko"
     },
     "ETH": {
-      "price": 3128.55,
-      "change_24h": -1.7228116755539524,
+      "price": 2940.71,
+      "change_24h": 0.2654900070946685,
       "source": "CoinGecko"
     },
     "ADA": {
-      "price": 0.430526,
-      "change_24h": -3.727652995089934,
+      "price": 0.380031,
+      "change_24h": -0.6564167716591108,
       "source": "CoinGecko"
     },
     "SOL": {
-      "price": 136.77,
-      "change_24h": -4.375544688904799,
+      "price": 127.93,
+      "change_24h": 1.0065485163370176,
       "source": "CoinGecko"
     },
     "XRP": {
-      "price": 2.07,
-      "change_24h": -3.639331025497925,
+      "price": 1.92,
+      "change_24h": 1.9247865596674276,
       "source": "CoinGecko"
     },
     "DOT": {
-      "price": 2.24,
-      "change_24h": -3.6843477809358753,
+      "price": 1.88,
+      "change_24h": -0.601291990382551,
       "source": "CoinGecko"
     },
     "DOGE": {
-      "price": 0.144323,
-      "change_24h": -3.4762789861713004,
+      "price": 0.130767,
+      "change_24h": 1.3674374053734097,
       "source": "CoinGecko"
     },
     "LTC": {
-      "price": 82.46,
-      "change_24h": -2.1205878366309574,
+      "price": 78.86,
+      "change_24h": 1.606261662746241,
       "source": "CoinGecko"
     },
     "LINK": {
-      "price": 14.0,
-      "change_24h": -2.953460258281307,
+      "price": 12.74,
+      "change_24h": -0.024182888381284573,
       "source": "CoinGecko"
     },
     "MATIC": {
@@ -51,5 +51,5 @@
       "source": "CoinGecko"
     }
   },
-  "last_update": "2025-12-05T13:49:39.023074"
+  "last_update": "2025-12-17T08:32:32.276547"
 }

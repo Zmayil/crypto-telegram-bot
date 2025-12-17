@@ -7,6 +7,8 @@ from aiogram.enums import ParseMode
 from aiogram.fsm.storage.memory import MemoryStorage
 from config import load_config
 from handlers.help_service import router as help_router
+from handlers.alerts import router as alerts_router
+from services.alert_checker import AlertChecker
 
 
 # Настройка цветного логирования
@@ -97,9 +99,12 @@ async def main() -> None:
     dp.include_router(start_router)
     dp.include_router(crypto_router)
     dp.include_router(help_router)
+    dp.include_router(alerts_router)
 
     # Запускаем фоновую задачу
     background_task = asyncio.create_task(background_price_updater())
+    alert_checker = AlertChecker(bot)
+    checker_task = asyncio.create_task(alert_checker.run_checker())
 
     try:
         logger = logging.getLogger(__name__)

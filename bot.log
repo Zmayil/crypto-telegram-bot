@@ -24,3 +24,220 @@
 2025-12-05 13:50:28 - __main__ - INFO - ⏹️ Фоновая задача остановлена
 2025-12-05 13:50:28 - __main__ - INFO - 🛑 Бот остановлен
 2025-12-05 13:50:28 - aiogram.dispatcher - INFO - Polling stopped for bot @CoinVisionAppBot id=8597814599 - 'CryptoWatcherBot'
+2025-12-17 08:06:55 - __main__ - INFO - 🤖 Бот запущен и готов к работе!
+2025-12-17 08:06:55 - aiogram.dispatcher - INFO - Start polling
+2025-12-17 08:06:55 - __main__ - INFO - 💚 Запуск фонового обновления цен...
+2025-12-17 08:06:55 - services.crypto_service - INFO - Кэш загружен, 10 записей
+2025-12-17 08:06:55 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:06:55 - services.alert_checker - INFO - Запуск проверки уведомлений...
+2025-12-17 08:06:55 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:06:55 - aiogram.dispatcher - INFO - Run polling for bot @CoinVisionAppBot id=8597814599 - 'CryptoWatcherBot'
+2025-12-17 08:06:55 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:06:55 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:07:04 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:07:04 - aiogram.event - INFO - Update id=853977792 is handled. Duration 265 ms by bot id=8597814599
+2025-12-17 08:07:07 - aiogram.event - INFO - Update id=853977793 is handled. Duration 125 ms by bot id=8597814599
+2025-12-17 08:07:09 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:07:09 - handlers.crypto_prices - INFO - Отправлены курсы валют пользователю 1928503054
+2025-12-17 08:07:09 - aiogram.event - INFO - Update id=853977794 is handled. Duration 108 ms by bot id=8597814599
+2025-12-17 08:07:10 - aiogram.event - INFO - Update id=853977795 is handled. Duration 94 ms by bot id=8597814599
+2025-12-17 08:07:13 - aiogram.event - INFO - Update id=853977796 is handled. Duration 171 ms by bot id=8597814599
+2025-12-17 08:07:14 - aiogram.event - INFO - Update id=853977797 is not handled. Duration 77 ms by bot id=8597814599
+2025-12-17 08:07:14 - aiogram.event - ERROR - Cause exception while process update id=853977797 by bot id=8597814599
+TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unsupported start tag "" at byte offset 174
+Traceback (most recent call last):
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 309, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 158, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\error.py", line 25, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\middlewares\user_context.py", line 56, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\fsm\middleware.py", line 42, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\dispatcher.py", line 276, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 174, in _propagate_event
+    response = await router.propagate_event(update_type=update_type, event=event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 146, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 141, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\router.py", line 166, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\event\telegram.py", line 121, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\dispatcher\event\handler.py", line 43, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\handlers\alerts.py", line 23, in alerts_menu
+    await message.answer(
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\methods\base.py", line 84, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\client\bot.py", line 485, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Retard\PycharmProjects\CryptoWatcherBot\.venv\Lib\site-packages\aiogram\client\session\base.py", line 120, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: can't parse entities: Unsupported start tag "" at byte offset 174
+2025-12-17 08:07:25 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:07:55 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:07:55 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:07:55 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:07:55 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:08:26 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:08:55 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:08:56 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:08:56 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:09:26 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:09:55 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:09:56 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:09:56 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:10:26 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:10:55 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:10:56 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:10:57 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:11:27 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:11:56 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:11:57 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:11:57 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:12:27 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:12:56 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:12:57 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:12:57 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:13:27 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:13:56 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:13:57 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:13:58 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:14:28 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:14:35 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-17 08:14:35 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-17 08:14:35 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8597814599)
+2025-12-17 08:14:35 - __main__ - INFO - ⏹️ Фоновая задача остановлена
+2025-12-17 08:14:35 - __main__ - INFO - 🛑 Бот остановлен
+2025-12-17 08:14:35 - aiogram.dispatcher - INFO - Polling stopped for bot @CoinVisionAppBot id=8597814599 - 'CryptoWatcherBot'
+2025-12-17 08:15:06 - __main__ - INFO - 🤖 Бот запущен и готов к работе!
+2025-12-17 08:15:06 - aiogram.dispatcher - INFO - Start polling
+2025-12-17 08:15:06 - __main__ - INFO - 💚 Запуск фонового обновления цен...
+2025-12-17 08:15:06 - services.crypto_service - INFO - Кэш загружен, 10 записей
+2025-12-17 08:15:06 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:15:06 - services.alert_checker - INFO - Запуск проверки уведомлений...
+2025-12-17 08:15:06 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:15:06 - aiogram.dispatcher - INFO - Run polling for bot @CoinVisionAppBot id=8597814599 - 'CryptoWatcherBot'
+2025-12-17 08:15:06 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:15:06 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:15:10 - aiogram.event - INFO - Update id=853977798 is handled. Duration 234 ms by bot id=8597814599
+2025-12-17 08:15:36 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:15:41 - aiogram.event - INFO - Update id=853977799 is handled. Duration 109 ms by bot id=8597814599
+2025-12-17 08:15:45 - aiogram.event - INFO - Update id=853977800 is handled. Duration 109 ms by bot id=8597814599
+2025-12-17 08:15:46 - aiogram.event - INFO - Update id=853977801 is handled. Duration 172 ms by bot id=8597814599
+2025-12-17 08:15:49 - aiogram.event - INFO - Update id=853977802 is handled. Duration 94 ms by bot id=8597814599
+2025-12-17 08:16:06 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:16:06 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:16:06 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:16:27 - aiogram.event - INFO - Update id=853977803 is handled. Duration 94 ms by bot id=8597814599
+2025-12-17 08:16:31 - aiogram.event - INFO - Update id=853977804 is handled. Duration 109 ms by bot id=8597814599
+2025-12-17 08:16:33 - aiogram.event - INFO - Update id=853977805 is handled. Duration 125 ms by bot id=8597814599
+2025-12-17 08:16:36 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:16:36 - services.alert_checker - INFO - Отправлено уведомление BTC пользователю 1928503054
+2025-12-17 08:17:06 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:17:06 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:17:06 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:17:36 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:18:06 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:18:06 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:18:07 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:18:36 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:19:06 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:19:07 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:19:36 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:19:36 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:19:54 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-17 08:19:54 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-17 08:19:54 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8597814599)
+2025-12-17 08:19:54 - __main__ - INFO - ⏹️ Фоновая задача остановлена
+2025-12-17 08:19:54 - __main__ - INFO - 🛑 Бот остановлен
+2025-12-17 08:19:54 - aiogram.dispatcher - INFO - Polling stopped for bot @CoinVisionAppBot id=8597814599 - 'CryptoWatcherBot'
+2025-12-17 08:27:13 - __main__ - INFO - 🤖 Бот запущен и готов к работе!
+2025-12-17 08:27:13 - aiogram.dispatcher - INFO - Start polling
+2025-12-17 08:27:13 - __main__ - INFO - 💚 Запуск фонового обновления цен...
+2025-12-17 08:27:13 - services.crypto_service - INFO - Кэш загружен, 10 записей
+2025-12-17 08:27:13 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:27:13 - services.alert_checker - INFO - Запуск проверки уведомлений...
+2025-12-17 08:27:13 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:27:13 - aiogram.dispatcher - INFO - Run polling for bot @CoinVisionAppBot id=8597814599 - 'CryptoWatcherBot'
+2025-12-17 08:27:13 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:27:13 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:27:14 - services.alert_checker - INFO - Отправлено уведомление BTC пользователю 1928503054
+2025-12-17 08:27:19 - aiogram.event - INFO - Update id=853977806 is not handled. Duration 0 ms by bot id=8597814599
+2025-12-17 08:27:24 - aiogram.event - INFO - Update id=853977807 is not handled. Duration 0 ms by bot id=8597814599
+2025-12-17 08:27:26 - aiogram.event - INFO - Update id=853977808 is not handled. Duration 0 ms by bot id=8597814599
+2025-12-17 08:27:44 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:28:14 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:28:14 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:28:14 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:28:14 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:28:41 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-17 08:28:41 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-17 08:28:41 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8597814599)
+2025-12-17 08:28:41 - __main__ - INFO - ⏹️ Фоновая задача остановлена
+2025-12-17 08:28:41 - __main__ - INFO - 🛑 Бот остановлен
+2025-12-17 08:28:41 - aiogram.dispatcher - INFO - Polling stopped for bot @CoinVisionAppBot id=8597814599 - 'CryptoWatcherBot'
+2025-12-17 08:31:31 - __main__ - INFO - 🤖 Бот запущен и готов к работе!
+2025-12-17 08:31:31 - aiogram.dispatcher - INFO - Start polling
+2025-12-17 08:31:31 - __main__ - INFO - 💚 Запуск фонового обновления цен...
+2025-12-17 08:31:31 - services.crypto_service - INFO - Кэш загружен, 10 записей
+2025-12-17 08:31:31 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:31:31 - services.alert_checker - INFO - Запуск проверки уведомлений...
+2025-12-17 08:31:31 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:31:31 - aiogram.dispatcher - INFO - Run polling for bot @CoinVisionAppBot id=8597814599 - 'CryptoWatcherBot'
+2025-12-17 08:31:31 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:31:31 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:31:31 - services.alert_checker - INFO - Отправлено уведомление BTC пользователю 1928503054
+2025-12-17 08:31:36 - aiogram.event - INFO - Update id=853977809 is handled. Duration 109 ms by bot id=8597814599
+2025-12-17 08:31:40 - aiogram.event - INFO - Update id=853977810 is handled. Duration 94 ms by bot id=8597814599
+2025-12-17 08:31:46 - aiogram.event - INFO - Update id=853977811 is handled. Duration 94 ms by bot id=8597814599
+2025-12-17 08:31:48 - aiogram.event - INFO - Update id=853977812 is handled. Duration 203 ms by bot id=8597814599
+2025-12-17 08:31:51 - aiogram.event - INFO - Update id=853977813 is handled. Duration 94 ms by bot id=8597814599
+2025-12-17 08:31:53 - aiogram.event - INFO - Update id=853977814 is handled. Duration 109 ms by bot id=8597814599
+2025-12-17 08:32:01 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:32:31 - services.crypto_service - INFO - Используем кэшированные данные
+2025-12-17 08:32:31 - services.crypto_service - INFO - Обновляем данные о ценах...
+2025-12-17 08:32:32 - services.crypto_service - INFO - Успешно получены данные с CoinGecko (10 записей)
+2025-12-17 08:32:40 - aiogram.dispatcher - INFO - Polling stopped
+2025-12-17 08:32:40 - aiogram.dispatcher - ERROR - Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+2025-12-17 08:32:40 - aiogram.dispatcher - WARNING - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8597814599)
+2025-12-17 08:32:40 - __main__ - INFO - ⏹️ Фоновая задача остановлена
+2025-12-17 08:32:40 - __main__ - INFO - 🛑 Бот остановлен
+2025-12-17 08:32:40 - aiogram.dispatcher - INFO - Polling stopped for bot @CoinVisionAppBot id=8597814599 - 'CryptoWatcherBot'
